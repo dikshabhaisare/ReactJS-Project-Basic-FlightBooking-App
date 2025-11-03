@@ -1,0 +1,195 @@
+🛫 Project: Flight Finder App
+🎯 Goal
+
+Build a React-based flight search app where users can:
+
+Select cities (From → To)
+
+Choose travel dates
+
+Search flights
+
+View flight details as cards
+
+Filter by price range, airline, or stops
+
+Responsive on all devices
+
+⚙️ Tech Stack
+
+React + Vite (frontend setup)
+
+react-router-dom (for navigation)
+
+react-select (for dropdowns)
+
+react-datepicker (for date selection)
+
+axios or fetch (for API calls)
+
+Tailwind CSS or Bootstrap (for responsive UI)
+
+🧩 App Structure
+src/
+ ├── components/
+ │    ├── FlightCard.jsx
+ │    ├── FilterSection.jsx
+ │    ├── Navbar.jsx
+ │
+ ├── pages/
+ │    ├── SearchPage.jsx
+ │    ├── ResultsPage.jsx
+ │
+ ├── utils/
+ │    ├── api.js
+ │
+ ├── App.jsx
+ ├── main.jsx
+ └── index.css
+
+🏗️ Part 1: Search Screen
+🔹 Features
+
+Dropdown: From City
+
+Dropdown: To City
+
+Date pickers: Departure & Return
+
+Button: Search Flights
+
+🔹 Example API for Cities
+
+Use this mock API (Beeceptor / Mocki):
+
+URL:
+
+https://mocki.io/v1/7d0e1b0e-0cf4-4bcd-93b8-99a2e2f84c7f
+
+
+Sample Response:
+
+{
+  "cities": [
+    {"city": "Delhi", "code": "DEL"},
+    {"city": "Mumbai", "code": "BOM"},
+    {"city": "Bangalore", "code": "BLR"},
+    {"city": "Chennai", "code": "MAA"},
+    {"city": "Kolkata", "code": "CCU"}
+  ]
+}
+
+
+Populate both dropdowns with these cities.
+
+🧭 Part 2: Results Screen
+🔹 On “Search Flights” click:
+
+Navigate to /results and show flight cards.
+
+🔹 Example Flight Results API
+
+URL:
+
+https://mocki.io/v1/7159a9a1-fd3a-4721-9b1f-c30dfaf46d61
+
+
+Sample Response:
+
+{
+  "flights": [
+    {
+      "airline": "IndiGo",
+      "flight_number": "6E-456",
+      "from": "Delhi",
+      "to": "Mumbai",
+      "departure": "2025-11-05T08:30",
+      "arrival": "2025-11-05T10:45",
+      "price": 5200,
+      "stops": "Non-stop",
+      "rating": 4.2,
+      "image": "https://i.imgur.com/Yq3N7jC.png"
+    },
+    {
+      "airline": "Air India",
+      "flight_number": "AI-204",
+      "from": "Delhi",
+      "to": "Mumbai",
+      "departure": "2025-11-05T09:15",
+      "arrival": "2025-11-05T11:30",
+      "price": 6800,
+      "stops": "Non-stop",
+      "rating": 4.5,
+      "image": "https://i.imgur.com/Vp4Lz6K.png"
+    }
+  ]
+}
+
+🔹 Show each flight in a card:
+
+Card Fields:
+
+Airline name + logo
+
+Flight number
+
+From → To
+
+Departure & Arrival time
+
+Price
+
+Rating
+
+Stops
+
+🎚️ Part 3: Filter Section (Good to Have)
+
+Allow users to filter by:
+
+Airline name
+
+Stops (Non-stop / 1-stop)
+
+Price range (slider or min–max input)
+
+📱 Part 4: Responsive Design
+
+Use Tailwind’s grid and flex utilities
+
+Breakpoints: sm, md, lg for mobile/tablet/desktop
+
+Make cards wrap neatly
+
+🧭 Navigation Flow
+
+/ → SearchPage
+
+Select from/to cities + dates → click Search
+
+/results → ResultsPage
+
+Fetch flight results and display cards
+
+Optional filters
+
+🚀 How to Run
+# 1. Create project
+npm create vite@latest flight-finder --template react
+
+# 2. Install dependencies
+cd flight-finder
+npm install react-router-dom react-select react-datepicker axios tailwindcss
+
+# 3. Run app
+npm run dev
+
+🧠 Bonus Ideas
+
+Add loading spinners during fetch
+
+Display “No Flights Found” if API is empty
+
+Add sort by price (low → high)
+
+Use localStorage to store last search

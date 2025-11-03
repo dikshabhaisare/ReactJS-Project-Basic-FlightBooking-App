@@ -1,0 +1,143 @@
+{
+  "cities": [
+    {"city": "Delhi", "code": "DEL"},
+    {"city": "Mumbai", "code": "BOM"},
+    {"city": "Bangalore", "code": "BLR"},
+    {"city": "Chennai", "code": "MAA"},
+    {"city": "Kolkata", "code": "CCU"}
+  ],
+  "flights": [
+    {
+      "id": 1,
+      "name": "Air India",
+      "from": "Delhi (DEL)",
+      "to": "Mumbai (BOM)",
+      "departure": "2025-11-03T08:00:00",
+      "arrival": "2025-11-03T10:10:00",
+      "duration": "2h 10m",
+      "price": 7200,
+      "stops": "Non-stop",
+      "airlineLogo": "https://upload.wikimedia.org/wikipedia/en/6/6b/Air_India_Logo.svg",
+      "rating": 4.5
+    },
+    {
+      "id": 2,
+      "name": "IndiGo",
+      "from": "Delhi (DEL)",
+      "to": "Bengaluru (BLR)",
+      "departure": "2025-11-03T06:00:00",
+      "arrival": "2025-11-03T08:35:00",
+      "duration": "2h 35m",
+      "price": 5800,
+      "stops": "Non-stop",
+      "airlineLogo": "https://upload.wikimedia.org/wikipedia/en/6/64/IndiGo_logo.svg",
+      "rating": 4.4
+    },
+    {
+      "id": 3,
+      "name": "Vistara",
+      "from": "Mumbai (BOM)",
+      "to": "Delhi (DEL)",
+      "departure": "2025-11-03T09:30:00",
+      "arrival": "2025-11-03T11:45:00",
+      "duration": "2h 15m",
+      "price": 8100,
+      "stops": "Non-stop",
+      "airlineLogo": "https://upload.wikimedia.org/wikipedia/en/9/9e/Vistara_logo.svg",
+      "rating": 4.6
+    },
+    {
+      "id": 4,
+      "name": "SpiceJet",
+      "from": "Chennai (MAA)",
+      "to": "Hyderabad (HYD)",
+      "departure": "2025-11-03T07:15:00",
+      "arrival": "2025-11-03T08:45:00",
+      "duration": "1h 30m",
+      "price": 4700,
+      "stops": "Non-stop",
+      "airlineLogo": "https://upload.wikimedia.org/wikipedia/en/1/1a/SpiceJet_logo.svg",
+      "rating": 4.2
+    },
+    {
+      "id": 5,
+      "name": "Go First",
+      "from": "Pune (PNQ)",
+      "to": "Delhi (DEL)",
+      "departure": "2025-11-03T11:10:00",
+      "arrival": "2025-11-03T13:35:00",
+      "duration": "2h 25m",
+      "price": 6400,
+      "stops": "Non-stop",
+      "airlineLogo": "https://upload.wikimedia.org/wikipedia/en/f/f1/Go_First_logo.svg",
+      "rating": 4.1
+    },
+    {
+      "id": 6,
+      "name": "Akasa Air",
+      "from": "Bengaluru (BLR)",
+      "to": "Chennai (MAA)",
+      "departure": "2025-11-03T15:40:00",
+      "arrival": "2025-11-03T16:50:00",
+      "duration": "1h 10m",
+      "price": 4100,
+      "stops": "Non-stop",
+      "airlineLogo": "https://upload.wikimedia.org/wikipedia/en/8/86/Akasa_Air_logo.svg",
+      "rating": 4.0
+    },
+    {
+      "id": 7,
+      "name": "Vistara",
+      "from": "Delhi (DEL)",
+      "to": "Kolkata (CCU)",
+      "departure": "2025-11-03T05:45:00",
+      "arrival": "2025-11-03T08:05:00",
+      "duration": "2h 20m",
+      "price": 7700,
+      "stops": "Non-stop",
+      "airlineLogo": "https://upload.wikimedia.org/wikipedia/en/9/9e/Vistara_logo.svg",
+      "rating": 4.6
+    },
+    {
+      "id": 8,
+      "name": "AirAsia India",
+      "from": "Mumbai (BOM)",
+      "to": "Goa (GOI)",
+      "departure": "2025-11-03T13:30:00",
+      "arrival": "2025-11-03T14:55:00",
+      "duration": "1h 25m",
+      "price": 5300,
+      "stops": "Non-stop",
+      "airlineLogo": "https://upload.wikimedia.org/wikipedia/en/8/8c/AirAsia_logo.svg",
+      "rating": 4.3
+    },
+    {
+      "id": 9,
+      "name": "SpiceJet",
+      "from": "Delhi (DEL)",
+      "to": "Jaipur (JAI)",
+      "departure": "2025-11-03T10:00:00",
+      "arrival": "2025-11-03T11:10:00",
+      "duration": "1h 10m",
+      "price": 3900,
+      "stops": "Non-stop",
+      "airlineLogo": "https://upload.wikimedia.org/wikipedia/en/1/1a/SpiceJet_logo.svg",
+      "rating": 4.1
+    },
+    {
+      "id": 10,
+      "name": "IndiGo",
+      "from": "Kolkata (CCU)",
+      "to": "Delhi (DEL)",
+      "departure": "2025-11-03T18:25:00",
+      "arrival": "2025-11-03T20:50:00",
+      "duration": "2h 25m",
+      "price": 6000,
+      "stops": "Non-stop",
+      "airlineLogo": "https://upload.wikimedia.org/wikipedia/en/6/64/IndiGo_logo.svg",
+      "rating": 4.5
+    }
+  ]
+}
+
+
